@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.survey.g2mdx.surveyg2m">
+    <uses-feature android:name="android.hardware.camera"></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_gm"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name="android.support.multidex.MultiDexApplication"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ActivitySplash"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityQ2"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ActivityQ3"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".GetPicActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".GetPicActivityNew"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".LocationActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".PhotoIntentActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SQLiteActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SpinnerMultiActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ActivityQ4"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>
